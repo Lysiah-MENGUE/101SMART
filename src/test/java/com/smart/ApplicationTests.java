@@ -11,11 +11,6 @@ class ApplicationTests {
 	void contextLoads() {
 	}
 
-	
-	
-	public void testEnum() {
-		EnumA enumA = new num
-		BeanUtils.copyProperties(getClass(), getClass());
-	}
+
 }
   

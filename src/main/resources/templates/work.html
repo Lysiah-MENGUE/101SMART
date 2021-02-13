@@ -121,20 +121,26 @@
 										style="width: 100%">
 									<div class="caption">
 										<p style="font-size: 18px; font-weight: bold;">KITOKO
-										<h5> Dimension 81,5 x 81 x 2,5 cm</h5> </p>
-										<p>
-										<span
-												style="font-size: 18px; font-weight: bold;"> Prix : 1
-												000 Euro </span>
-											<a class="btn btn-primary btn-learn">
-											<span
-												style="color: black; font-weight: bold;">
-												Plus de detail
-											</span><i class="icon-arrow-right3"></i>
-											</a>
-													
-											
+										<h5>Dimension 81,5 x 81 x 2,5 cm</h5>
 										</p>
+
+
+
+										<form th:action="@{/detail}" method="post">
+											<span style="font-size: 18px; font-weight: bold;">
+												Prix : 1 000 Euro </span>
+												
+												<input type="hidden" id="priceId" name="price" value="1000">
+                                               <input type="hidden" id="postId" name="article" value="kitoko.jpeg">
+											
+												<button class="btn btn-primary btn-learn" type="submit">
+
+													<span style="color: black; font-weight: bold;"> Plus
+														de detail </span><i class="icon-arrow-right3"></i>
+												</button>
+										
+											
+										</form>
 
 									</div>
 
@@ -146,19 +152,16 @@
 										style="width: 100%">
 									<div class="caption">
 										<p style="font-size: 18px; font-weight: bold;">SOURCE
-										<h5> Dimension 63 x 66 x 3 cm</h5> </p>
+										<h5>Dimension 63 x 66 x 3 cm</h5>
+										</p>
 										<p>
-										<span
-												style="font-size: 18px; font-weight: bold;"> Prix : 30.
-												000 Euro </span>
-											<a class="btn btn-primary btn-learn">
-											<span
-												style="color: black; font-weight: bold;">
-												Plus de detail
-											</span><i class="icon-arrow-right3"></i>
+											<span style="font-size: 18px; font-weight: bold;">
+												Prix : 30. 000 Euro </span> <a class="btn btn-primary btn-learn">
+												<span style="color: black; font-weight: bold;"> Plus
+													de detail </span><i class="icon-arrow-right3"></i>
 											</a>
-													
-											
+
+
 										</p>
 									</div>
 
@@ -169,20 +172,18 @@
 									<img src="peintures/mamafrica.jpeg" alt="Fjords"
 										style="width: 100%" />
 									<div class="caption">
-										<p style="font-size: 18px; font-weight: bold;">MAMAN AFRICA
-										<h5> Dimension 152,5 x 152,5 x 3 cm</h5> </p>
+										<p style="font-size: 18px; font-weight: bold;">MAMAN
+											AFRICA
+										<h5>Dimension 152,5 x 152,5 x 3 cm</h5>
+										</p>
 										<p>
-										<span
-												style="font-size: 18px; font-weight: bold;"> Prix : 50.
-												000 Euro </span>
-											<a class="btn btn-primary btn-learn">
-											<span
-												style="color: black; font-weight: bold;">
-												Plus de detail
-											</span><i class="icon-arrow-right3"></i>
+											<span style="font-size: 18px; font-weight: bold;">
+												Prix : 50. 000 Euro </span> <a class="btn btn-primary btn-learn">
+												<span style="color: black; font-weight: bold;"> Plus
+													de detail </span><i class="icon-arrow-right3"></i>
 											</a>
-													
-											
+
+
 										</p>
 									</div>
 
@@ -198,20 +199,18 @@
 									<img src="peintures/bantuculture.jpeg" alt="Lights"
 										style="width: 100%">
 									<div class="caption">
-										<p style="font-size: 18px; font-weight: bold;">BANTU CULTURE
-										<h5> Dimension 50 x 70 x 3 cm</h5> </p>
+										<p style="font-size: 18px; font-weight: bold;">BANTU
+											CULTURE
+										<h5>Dimension 50 x 70 x 3 cm</h5>
+										</p>
 										<p>
-										<span
-												style="font-size: 18px; font-weight: bold;"> Prix : 90.
-												000 Euro </span>
-											<a class="btn btn-primary btn-learn">
-											<span
-												style="color: black; font-weight: bold;">
-												Plus de detail
-											</span><i class="icon-arrow-right3"></i>
+											<span style="font-size: 18px; font-weight: bold;">
+												Prix : 90. 000 Euro </span> <a class="btn btn-primary btn-learn">
+												<span style="color: black; font-weight: bold;"> Plus
+													de detail </span><i class="icon-arrow-right3"></i>
 											</a>
-													
-											
+
+
 										</p>
 									</div>
 
@@ -222,20 +221,18 @@
 									<img src="peintures/blackp.jpeg" alt="Nature"
 										style="width: 100%">
 									<div class="caption">
-										<p style="font-size: 18px; font-weight: bold;">BLACK PANTHER
-										<h5> Dimension 162 x 130 x 5 cm</h5> </p>
+										<p style="font-size: 18px; font-weight: bold;">BLACK
+											PANTHER
+										<h5>Dimension 162 x 130 x 5 cm</h5>
+										</p>
 										<p>
-										<span
-												style="font-size: 18px; font-weight: bold;"> Prix : 150.
-												000 Euro </span>
-											<a class="btn btn-primary btn-learn">
-											<span
-												style="color: black; font-weight: bold;">
-												Plus de detail
-											</span><i class="icon-arrow-right3"></i>
+											<span style="font-size: 18px; font-weight: bold;">
+												Prix : 150. 000 Euro </span> <a class="btn btn-primary btn-learn">
+												<span style="color: black; font-weight: bold;"> Plus
+													de detail </span><i class="icon-arrow-right3"></i>
 											</a>
-													
-											
+
+
 										</p>
 									</div>
 
@@ -246,20 +243,18 @@
 									<img src="peintures/mystic.jpeg" alt="Lights"
 										style="width: 100%">
 									<div class="caption">
-										<p style="font-size: 18px; font-weight: bold;">MYSTIC BANTU
-										<h5> Dimension 81,5 x 81 x 2,5 cm</h5> </p>
+										<p style="font-size: 18px; font-weight: bold;">MYSTIC
+											BANTU
+										<h5>Dimension 81,5 x 81 x 2,5 cm</h5>
+										</p>
 										<p>
-										<span
-												style="font-size: 18px; font-weight: bold;"> Prix : 100.
-												000 Euro </span>
-											<a class="btn btn-primary btn-learn">
-											<span
-												style="color: black; font-weight: bold;">
-												Plus de detail
-											</span><i class="icon-arrow-right3"></i>
+											<span style="font-size: 18px; font-weight: bold;">
+												Prix : 100. 000 Euro </span> <a class="btn btn-primary btn-learn">
+												<span style="color: black; font-weight: bold;"> Plus
+													de detail </span><i class="icon-arrow-right3"></i>
 											</a>
-													
-											
+
+
 										</p>
 									</div>
 
@@ -277,20 +272,18 @@
 									style="width: 100%">
 								<div class="caption">
 									<p style="font-size: 18px; font-weight: bold;">INSPIRATION
-										<h5> Dimension 116 x 89 cm</h5> </p>
-										<p>
-										<span
-												style="font-size: 18px; font-weight: bold;"> Prix : 120.
-												000 Euro </span>
-											<a class="btn btn-primary btn-learn">
-											<span
-												style="color: black; font-weight: bold;">
-												Plus de detail
-											</span><i class="icon-arrow-right3"></i>
-											</a>
-													
-											
-										</p>
+									
+									<h5>Dimension 116 x 89 cm</h5>
+									</p>
+									<p>
+										<span style="font-size: 18px; font-weight: bold;"> Prix
+											: 120. 000 Euro </span> <a class="btn btn-primary btn-learn"> <span
+											style="color: black; font-weight: bold;"> Plus de
+												detail </span><i class="icon-arrow-right3"></i>
+										</a>
+
+
+									</p>
 								</div>
 
 							</div>
@@ -300,20 +293,21 @@
 								<img src="peintures/uzuri.jpeg" alt="Fjords" style="width: 100%" />
 								<div class="caption">
 									<p style="font-size: 18px; font-weight: bold;">UZURI
-										<h5> Dimension 125 x 122 cm</h5> </p>
-										<p>
-										<span
-												style="font-size: 18px; font-weight: bold;"> Prix :  
-												500 Euro </span>
-											<a class="btn btn-primary btn-learn">
-											<span
-												style="color: black; font-weight: bold;">
-												Plus de detail
-											</span><i class="icon-arrow-right3"></i>
-											</a>
-													
-											
-										</p>
+									<h5>Dimension 125 x 122 cm</h5>
+									</p>
+									<p>
+										<span style="font-size: 18px; font-weight: bold;"> Prix
+											: 500 Euro </span> <a class="btn btn-primary btn-learn"> <span
+											style="color: black; font-weight: bold;"> Plus de
+												detail </span><i class="icon-arrow-right3"></i>
+										</a>
+
+
+									</p>
+
+
+
+
 								</div>
 
 							</div>
@@ -322,21 +316,19 @@
 							<div class="thumbnail">
 								<img src="peintures/fruit.jpeg" alt="Lights" style="width: 100%">
 								<div class="caption">
-									<p style="font-size: 18px; font-weight: bold;">FRUIT DE L'AMOUR
-										<h5> Dimension 152,5 x 112,5 x 3cm</h5> </p>
-										<p>
-										<span
-												style="font-size: 18px; font-weight: bold;"> Prix : 80.
-												000 Euro </span>
-											<a class="btn btn-primary btn-learn">
-											<span
-												style="color: black; font-weight: bold;">
-												Plus de detail
-											</span><i class="icon-arrow-right3"></i>
-											</a>
-													
-											
-										</p>
+									<p style="font-size: 18px; font-weight: bold;">FRUIT DE
+										L'AMOUR
+									<h5>Dimension 152,5 x 112,5 x 3cm</h5>
+									</p>
+									<p>
+										<span style="font-size: 18px; font-weight: bold;"> Prix
+											: 80. 000 Euro </span> <a class="btn btn-primary btn-learn"> <span
+											style="color: black; font-weight: bold;"> Plus de
+												detail </span><i class="icon-arrow-right3"></i>
+										</a>
+
+
+									</p>
 								</div>
 
 							</div>
@@ -356,20 +348,17 @@
 								<img src="peintures/kimia.jpeg" alt="Fjords" style="width: 100%" />
 								<div class="caption">
 									<p style="font-size: 18px; font-weight: bold;">KIMIA
-										<h5> Dimension 178 x 218 cm</h5> </p>
-										<p>
-										<span
-												style="font-size: 18px; font-weight: bold;"> Prix : 1
-												500 Euro </span>
-											<a class="btn btn-primary btn-learn">
-											<span
-												style="color: black; font-weight: bold;">
-												Plus de detail
-											</span><i class="icon-arrow-right3"></i>
-											</a>
-													
-											
-										</p>
+									<h5>Dimension 178 x 218 cm</h5>
+									</p>
+									<p>
+										<span style="font-size: 18px; font-weight: bold;"> Prix
+											: 1 500 Euro </span> <a class="btn btn-primary btn-learn"> <span
+											style="color: black; font-weight: bold;"> Plus de
+												detail </span><i class="icon-arrow-right3"></i>
+										</a>
+
+
+									</p>
 								</div>
 
 							</div>
@@ -380,20 +369,18 @@
 									style="width: 100%" />
 								<div class="caption">
 									<p style="font-size: 18px; font-weight: bold;">CELEBRATION
-										<h5> Dimension 100 x 100 cm</h5> </p>
-										<p>
-										<span
-												style="font-size: 18px; font-weight: bold;"> Prix : 1O.
-												000 Euro </span>
-											<a class="btn btn-primary btn-learn">
-											<span
-												style="color: black; font-weight: bold;">
-												Plus de detail
-											</span><i class="icon-arrow-right3"></i>
-											</a>
-													
-											
-										</p>
+									
+									<h5>Dimension 100 x 100 cm</h5>
+									</p>
+									<p>
+										<span style="font-size: 18px; font-weight: bold;"> Prix
+											: 1O. 000 Euro </span> <a class="btn btn-primary btn-learn"> <span
+											style="color: black; font-weight: bold;"> Plus de
+												detail </span><i class="icon-arrow-right3"></i>
+										</a>
+
+
+									</p>
 								</div>
 
 							</div>
@@ -405,20 +392,17 @@
 									style="width: 100%">
 								<div class="caption">
 									<p style="font-size: 18px; font-weight: bold;">RACINES
-										<h5> Dimension 63 x 66 x 3 cm</h5> </p>
-										<p>
-										<span
-												style="font-size: 18px; font-weight: bold;"> Prix : 5
-												000 Euro </span>
-											<a class="btn btn-primary btn-learn">
-											<span
-												style="color: black; font-weight: bold;">
-												Plus de detail
-											</span><i class="icon-arrow-right3"></i>
-											</a>
-													
-											
-										</p>
+									<h5>Dimension 63 x 66 x 3 cm</h5>
+									</p>
+									<p>
+										<span style="font-size: 18px; font-weight: bold;"> Prix
+											: 5 000 Euro </span> <a class="btn btn-primary btn-learn"> <span
+											style="color: black; font-weight: bold;"> Plus de
+												detail </span><i class="icon-arrow-right3"></i>
+										</a>
+
+
+									</p>
 								</div>
 
 							</div>
