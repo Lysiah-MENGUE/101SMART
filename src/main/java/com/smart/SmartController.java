@@ -22,8 +22,31 @@ public class SmartController {
 	 
 	 {
 		 articles.put("kitoko.jpeg", new BigDecimal(1000));
+	 
+	     articles.put("source.jpeg", new BigDecimal(30000));
+	     
+	     articles.put("mamafrica.jpeg", new BigDecimal(50000));
+	     
+	     articles.put("bantuculture.jpeg", new BigDecimal(90000));
+	     
+	     
+	     articles.put("blackp.jpeg", new BigDecimal(150000));
 		 
+	     articles.put("mystic.jpeg", new BigDecimal(100000));
+	     articles.put("inspiration.jpeg", new BigDecimal(120000));
 		 
+	     articles.put("uzuri.jpeg", new BigDecimal(500));
+	     
+	     
+	     articles.put("fruit.jpeg", new BigDecimal(80000));
+		 
+	     articles.put("kimia.jpeg", new BigDecimal(1500));
+	     
+	     
+	     articles.put("celebration.jpeg", new BigDecimal(10000));
+		 
+	     articles.put("racines.jpeg", new BigDecimal(5000));
+	      
 	 }
 	 
 	
