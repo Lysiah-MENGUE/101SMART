@@ -92,10 +92,11 @@ public class SmartController {
 	
 	
 	@RequestMapping (value = "/detail" , method = RequestMethod.POST)
-	public String detail(@RequestParam String article , final ModelMap model ) {
+	public String detail(@RequestParam String article ,@RequestParam String nomArticle , final ModelMap model ) {
 		
 		LOG.info("La valeur de article est :"+article);
 		
+		model.addAttribute("nomArticle",nomArticle);
 		model.addAttribute("article", "peintures/"+article);
 		model.addAttribute("price", articles.get(article)+"€");
 		return "detail";
