@@ -56,6 +56,15 @@ public class SmartController {
 		return "index";
 	}
 	
+	
+	
+	@RequestMapping (value = "/" , method = RequestMethod.GET)
+	public String homeBis() {
+		
+		return "index";
+	}
+	
+	
 	@RequestMapping (value = "/galerie" , method = RequestMethod.GET)
 	public String galerie() {
 		
