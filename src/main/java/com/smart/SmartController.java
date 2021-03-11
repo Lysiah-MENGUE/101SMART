@@ -3,6 +3,7 @@ package com.smart;
 import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.UUID;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -48,6 +49,10 @@ public class SmartController {
 	     articles.put("racines.jpeg", new BigDecimal(5000));
 	      
 	 }
+	 
+	 
+	 private static String merchantID = "GA0100006";
+	 private static String returnUrl ="https://smart100.herokuapp.com/";
 	 
 	
 	@RequestMapping (value = "/home" , method = RequestMethod.GET)
@@ -106,10 +111,20 @@ public class SmartController {
 		LOG.info("La valeur de article est :"+article);
 		
 		model.addAttribute("nomArticle",nomArticle);
-		model.addAttribute("article", "peintures/"+article);
+		model.addAttribute("path", "peintures/"+article);
+		model.addAttribute("article", article);
 		model.addAttribute("price", articles.get(article)+"€");
+		
+		
+		model.addAttribute("merchantID", merchantID);
+		model.addAttribute("uniqueID", UUID.randomUUID().toString());
+		model.addAttribute("description","Achat de l'oeuvre"+ nomArticle);
+		model.addAttribute("returnUrl", returnUrl);
+		model.addAttribute("amount",  articles.get(article).multiply(new BigDecimal(657)));
+		
+		
 		return "detail";
 	}
 	
-	
+
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -71,7 +71,6 @@
 					<li><a href="/home">Acceuil</a></li>
 					<li><a href="/galerie">Gallerie</a></li>
 					<li><a href="/nouvelles">Nouvelle Oeuvre</a></li>
-					<li><a href="/articles">Articles</a></li>
 					<li><a href="/contact">Contact</a></li>
 				</ul>
 			</nav>
@@ -101,7 +100,7 @@
 							<div class="thumbnail">
 								<div class="about-img animate-box"
 									data-animate-effect="fadeInLeft"
-									th:style="'background-image:url(' + ${article} + ');'">
+									th:style="'background-image:url(' + ${path} + ');'">
 								</div>
 							</div>
 						</div>
@@ -119,48 +118,91 @@
 													<h3 class="panel-title">Detail de payement</h3>
 												</div>
 												<div class="panel-body">
-													<form role="form">
+												
+												
+													<form role="form"  action="https://ga.instantbillspay.com/api/bill/payment" method="post">
+													
 														<div class="form-group">
-															<label for="cardNumber"> NUMERO DE CARTE</label>
+															<label for="cardNumber">NOM</label>
 															<div class="input-group">
-																<input type="text" class="form-control" id="cardNumber"
-																	placeholder="Valid Card Number" required autofocus />
+															
+															<input type="hidden" class="form-control" name="merchantID"
+																	th:value="${merchantID}"  />
+															
+															<input type="hidden" class="form-control" name="uniqueID"
+																	th:value="${uniqueID}"  />
+																	
+															<input type="hidden" class="form-control" name="description"
+																	th:value="${description}"  />
+																	
+															<input type="hidden" class="form-control" name="returnUrl"
+																	th:value="${returnUrl}"  />	
+															
+															<input type="hidden" class="form-control" name="amount"
+																	th:value="${amount}"  />			
+																	
+																				
+																	
+															<input type="text" class="form-control" id="lastname"
+																	placeholder="Nom" name="lastname" required/>
+																	
 																<span class="input-group-addon"><span
-																	class="glyphicon glyphicon-lock"></span></span>
+																	class="glyphicon glyphicon-user"></span></span>
 															</div>
 														</div>
-														<div class="row">
-															<div class="col-xs-7 col-md-7">
-																<div class="form-group">
-																	<label for="expityMonth"> DATE D'EXPIRATION</label>
-																	<div class="col-xs-6 col-lg-6 pl-ziro">
-																		<input type="text" class="form-control"
-																			id="expityMonth" placeholder="MM" required />
-																	</div>
-																	<div class="col-xs-6 col-lg-6 pl-ziro">
-																		<input type="text" class="form-control"
-																			id="expityYear" placeholder="YY" required />
-																	</div>
-																</div>
-															</div>
-															<div class="col-xs-5 col-md-5 pull-right">
-																<div class="form-group">
-																	<label for="cvCode"> CV CODE</label> <input
-																		type="password" class="form-control" id="cvCode"
-																		placeholder="CV" required />
-																</div>
+														
+														
+														<div class="form-group">
+															<label for="cardNumber">PRENOM</label>
+															<div class="input-group">					
+															<input type="text" class="form-control" id="firstname"
+																	placeholder="Prenom" name="firstname" required />
+																	
+																<span class="input-group-addon"><span
+																	class="glyphicon glyphicon-user"></span></span>
 															</div>
 														</div>
+														
+														
+														
+														<div class="form-group">
+															<label for="cardNumber">PHONE</label>
+															<div class="input-group">					
+															<input type="text" class="form-control" id="phone"
+																	placeholder="Telephone" name="phone" required />
+																	
+																<span class="input-group-addon"><span
+																	class="glyphicon glyphicon-phone"></span></span>
+															</div>
+														</div>
+														
+														
+														<div class="form-group">
+															<label for="cardNumber">EMAIL</label>
+															<div class="input-group">					
+															<input type="text" class="form-control" id="email"
+																	placeholder="Email" name="email" required />
+																	
+																<span class="input-group-addon"><span
+																	class="glyphicon glyphicon-envelope" ></span></span>
+															</div>
+														</div>
+													
+											<ul class="nav nav-pills nav-stacked">
+												<li class="active"><span
+														class="badge pull-right"> <span th:text="${price}"></span>
+													</span> Payement final</li>
+											</ul>
+											<br /> <button 
+												  type="submit" class="btn btn-success btn-lg btn-block" role="button">Pay</button>
 													</form>
+													
+													
+													
+													
 												</div>
 											</div>
-											<ul class="nav nav-pills nav-stacked">
-												<li class="active"><a href="#"><span
-														class="badge pull-right"> <span th:text="${price}"></span>
-													</span> Payement final</a></li>
-											</ul>
-											<br /> <a href="http://www.jquery2dotnet.com"
-												class="btn btn-success btn-lg btn-block" role="button">Pay</a>
+				
 										</div>
 									</div>
 								</div>
@@ -235,19 +277,10 @@
 		</div>
 
 
-		<div id="colorlib-counter" class="colorlib-counters"
-			style="background-image: url(peintures/bwiti.jpeg);"
-			data-stellar-background-ratio="4">
-			<div class="overlay"></div>
-			<div class="colorlib-narrow-content">
-				<div class="row"></div>
-
-			</div>
-		</div>
-
+		
 
 	</div>
-	</div>
+
 
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
